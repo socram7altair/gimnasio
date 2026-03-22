@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+
+	<channel>
+		<title>FitLife Gym - Noticias</title>
+		<link>https://socram7altair.github.io/gimnasio/</link>
+		<description>Las últimas noticias de nuestro gimnasio</description>
+		<atom:link href="https://socram7altair.github.io/gimnasio/noticias.xml" rel="self" type="application/rss+xml"/>
+		<pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
+		<language>es-es</language>
+		<managingEditor>mmartinzan@educacion.navarra.es (Marcos Joel Martín)</managingEditor>
+		<image>
+			<url>https://cdn.pixabay.com/photo/2014/04/03/10/43/weight-lifting-311241_1280.png</url>
+			<title>FitLife Gym - Noticias</title>
+			<link>https://socram7altair.github.io/gimnasio/</link>
+		</image>
+		
+		<item>
+		  <title>Nueva zona de entrenamiento funcional</title>
+		  <link>https://socram7altair.github.io/gimnasio/noticia1.html</link>
+		  <description>El gimnasio PowerFit ha inaugurado una nueva zona dedicada al entrenamiento funcional. Este nuevo espacio cuenta con equipamiento moderno como kettlebells, cuerdas de batalla, cajas pliométricas y estructuras de calistenia.</description>
+		  <author>carlosmartinez@fitlifegym.es (Carlos Martínez)</author>
+		  <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
+		  <guid>https://socram7altair.github.io/gimnasio/noticia1.html</guid>
+		</item>
+
+		<item>
+		  <title>Nuevas clases de yoga para principiantes</title>
+		  <link>https://socram7altair.github.io/gimnasio/noticia2.html</link>
+		  <description>El gimnasio PowerFit incorpora nuevas clases de yoga dirigidas a personas que quieran iniciarse en esta disciplina.</description>
+		  <author>lauragomez@fitlifegym.es (Laura Gómez)</author>
+		  <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
+		  <guid>https://socram7altair.github.io/gimnasio/noticia2.html</guid>
+		</item>
+
+		<item>
+		  <title>Promoción especial para nuevos socios</title>
+		  <link>https://socram7altair.github.io/gimnasio/noticia3.html</link>
+		  <description>Durante el mes de marzo el gimnasio PowerFit ofrece una promoción especial para nuevos socios.</description>
+		  <author>powerfit@fitlifegym.es (Equipo PowerFit)</author>
+		  <pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate>
+		  <guid>https://socram7altair.github.io/gimnasio/noticia3.html</guid>
+		</item>
+
+	</channel>
+
+</rss>
