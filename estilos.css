@@ -1,0 +1,172 @@
+/* ===== ESTILOS GLOBALES ===== */
+body {
+    margin: 0; /* eliminando los márgenes por defecto del navegador */
+    font-family: Arial, sans-serif; /* fuente común para toda la web sans-serif */
+    background: #f4f4f4; /* color de fondo general */
+    color: #333; /* color base para el texto */
+    min-height: 100vh; /* El body debe ocupar al menos el alto completo de la ventana */
+    display: flex; /* Usa Flexbox o Grid para estructurar toda la página */
+    flex-direction: column;
+}
+
+#cabecera { /* Utiliza un selector de identificador para aplicar los estilos principales */
+    display: flex; /* La cabecera debe contener el logo y el menú alineados horizontalmente. */
+    align-items: center; /* alineación vertical de logo y menú */
+    justify-content: space-between; /* alineación a los extremos */
+    background-color: #222; /* color de fondo */
+    padding: 12px 20px; /* Añade espacio interior */
+}
+
+/* Bloque logo + nombre */
+.branding {
+    display: flex; /* logo y nombre alineados horizontalmente */
+    align-items: center; /* logo y nombre alineados verticalmente */
+    gap: 10px; /* nombre pegado al logo */
+}
+
+/* Logo */
+.logo {
+    width: 65px; /* tamaño fijo */
+    height: auto;
+}
+
+/* Nombre del gimnasio */
+.nombre-gym {
+    font-family: Impact, Arial Black, sans-serif; /* fuente específica para el nombre*/
+    font-size: 28px;
+    font-weight: normal;   /* Impact ya es gruesa */
+    letter-spacing: 1px;
+    color: #f98109;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.menu {
+    list-style: none; /* Elimina los estilos por defecto de la lista */
+    display: flex; /* El menú debe mostrarse en horizontal. */
+    margin: 0;
+}
+
+.menu>li { /* Usa un selector hijo (>) para espaciar los elementos del menú */
+    margin-left: 15px;
+}
+
+.menu a { /* enlace normal */
+    display: block;
+    padding: 8px 12px;
+    color: #fff;
+    text-decoration: none; /* Los enlaces no deben tener subrayado */
+    font-weight: bold; /* Usa mayúsculas o negrita para destacar el texto */
+    border-radius: 4px;
+}
+
+.menu a:hover { /* enlace al pasar el ratón */
+    background: orange;
+}
+
+.menu a.activo { /* enlace de la página actual */
+    background: #f98109; /* fondo diferente */
+    color: #fff;
+}
+
+main.contenido {
+    flex: 1;
+    padding: 20px; /* El contenido debe tener separación respecto a la cabecera */
+}
+
+/* ===== PÁGINA PRINCIPAL ===== */
+.principal .fila {
+    display: flex; /* Cada sección debe organizar sus elementos en horizontal. */
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.principal .caja {
+    background: #fff; /* fondo */ 
+    padding: 10px; /* espacio interior */
+    border: 2px solid #ddd; /* borde */
+    flex: 1; /* Las cajas deben ocupar el mismo ancho dentro de cada fila */
+    text-align: center;
+}
+
+.principal .caja p {
+    font-style:italic;
+}
+
+.principal .caja img {
+    width: 100%; /* ocupar todo el ancho */
+    height: 180px; /* altura uniforme */
+    object-fit: cover; /* recorta sin deformar */
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+
+/* ===== ACTIVIDADES ===== */
+.actividades {
+    display: grid; /* Usa Grid Layout */
+    grid-template-columns: repeat(3, 1fr); /* Organiza las actividades en dos filas de tres columnas */
+    gap: 15px;
+}
+
+.actividades .actividad {
+    background: #fff; /* fondo */
+    border: 1px solid #ccc; /* borde */
+    padding: 8px; /* separación interior */
+    text-align: center;
+}
+
+.actividades .actividad img {
+    width: 100%; /* Las imágenes deben ocupar todo el ancho de la tarjeta */
+    height: 150px; /* altura fija para la grid */
+    object-fit: cover; /* Evita que se deformen al cambiar el tamaño */
+    margin-bottom: 8px;
+}
+
+/* ===== FORMULARIO ===== */
+.contacto {
+    display: flex;
+    align-content: center; /* El formulario debe estar centrado horizontal y verticalmente */
+}
+
+#formulario-contacto {
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #ccc;
+    max-width: 400px;
+    margin: auto;
+}
+
+#formulario-contacto label {
+    display: block;
+    margin-bottom: 10px;
+    padding-right: 20px;
+}
+
+#formulario-contacto input,
+#formulario-contacto textarea {
+    width: 100%; /* Los campos deben ocupar todo el ancho disponible */
+    padding: 5px;
+    margin-top: 5px;
+}
+
+#formulario-contacto button { /* El botón debe tener estilos propios */
+    background-color: #111;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#formulario-contacto button:hover { /* Debe cambiar visualmente al pasar el ratón */
+    background-color: orange;
+}
+
+/* ===== FOOTER FIJO ABAJO ===== */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    flex-shrink: 0;
+}
